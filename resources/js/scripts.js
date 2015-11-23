@@ -1,4 +1,4 @@
-(function($) {
+(function() {
     'use strict';
 
     var Pesten = function(content_element) {
@@ -506,4 +506,4 @@
     window.addEventListener('load', function() {
         var game = new Pesten(document.getElementById('content'));
     });
-})(jQuery);
+})();
