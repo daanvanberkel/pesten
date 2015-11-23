@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.card, .card_back {
+	height: 123px;
+	width: 79px;
+	display: block;
+	float: left;
+	cursor: pointer;
+}
+
+#KA {background: url('../images/kaarten.png') 0 0;}
+#K2 {background: url('../images/kaarten.png') -79px 0;}
+#K3 {background: url('../images/kaarten.png') -158px 0;}
+#K4 {background: url('../images/kaarten.png') -237px 0;}
+#K5 {background: url('../images/kaarten.png') -316px 0;}
+#K6 {background: url('../images/kaarten.png') -395px 0;}
+#K7 {background: url('../images/kaarten.png') -474px 0;}
+#K8 {background: url('../images/kaarten.png') -553px 0;}
+#K9 {background: url('../images/kaarten.png') -632px 0;}
+#K10 {background: url('../images/kaarten.png') -711px 0;}
+#KB {background: url('../images/kaarten.png') -790px 0;}
+#KV {background: url('../images/kaarten.png') -869px 0;}
+#KH {background: url('../images/kaarten.png') -948px 0;}
+
+#RA {background: url('../images/kaarten.png') 0 -123px;}
+#R2 {background: url('../images/kaarten.png') -79px -123px;}
+#R3 {background: url('../images/kaarten.png') -158px -123px;}
+#R4 {background: url('../images/kaarten.png') -237px -123px;}
+#R5 {background: url('../images/kaarten.png') -316px -123px;}
+#R6 {background: url('../images/kaarten.png') -395px -123px;}
+#R7 {background: url('../images/kaarten.png') -474px -123px;}
+#R8 {background: url('../images/kaarten.png') -553px -123px;}
+#R9 {background: url('../images/kaarten.png') -632px -123px;}
+#R10 {background: url('../images/kaarten.png') -711px -123px;}
+#RB {background: url('../images/kaarten.png') -790px -123px;}
+#RV {background: url('../images/kaarten.png') -869px -123px;}
+#RH {background: url('../images/kaarten.png') -948px -123px;}
+
+#HA {background: url('../images/kaarten.png') 0 -246px;}
+#H2 {background: url('../images/kaarten.png') -79px -246px;}
+#H3 {background: url('../images/kaarten.png') -158px -246px;}
+#H4 {background: url('../images/kaarten.png') -237px -246px;}
+#H5 {background: url('../images/kaarten.png') -316px -246px;}
+#H6 {background: url('../images/kaarten.png') -395px -246px;}
+#H7 {background: url('../images/kaarten.png') -474px -246px;}
+#H8 {background: url('../images/kaarten.png') -553px -246px;}
+#H9 {background: url('../images/kaarten.png') -632px -246px;}
+#H10 {background: url('../images/kaarten.png') -711px -246px;}
+#HB {background: url('../images/kaarten.png') -790px -246px;}
+#HV {background: url('../images/kaarten.png') -869px -246px;}
+#HH {background: url('../images/kaarten.png') -948px -246px;}
+
+#SA {background: url('../images/kaarten.png') 0 -369px;}
+#S2 {background: url('../images/kaarten.png') -79px -369px;}
+#S3 {background: url('../images/kaarten.png') -158px -369px;}
+#S4 {background: url('../images/kaarten.png') -237px -369px;}
+#S5 {background: url('../images/kaarten.png') -316px -369px;}
+#S6 {background: url('../images/kaarten.png') -395px -369px;}
+#S7 {background: url('../images/kaarten.png') -474px -369px;}
+#S8 {background: url('../images/kaarten.png') -553px -369px;}
+#S9 {background: url('../images/kaarten.png') -632px -369px;}
+#S10 {background: url('../images/kaarten.png') -711px -369px;}
+#SB {background: url('../images/kaarten.png') -790px -369px;}
+#SV {background: url('../images/kaarten.png') -869px -369px;}
+#SH {background: url('../images/kaarten.png') -948px -369px;}
+
+#JO {background: url('../images/joker_kaart.png');}
+#JK {background: url('../images/joker_kaart.png');}
+
+.card_back {
+    background: url('../images/kaart_achterkant.png');
+    cursor: default;
+}
+
+#player1:after, #player2:after, #player3:after, #player4:after, #stack:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#player2 .card, #player3 .card, #player4 .card {
+    background: url('../images/kaart_achterkant.png');
+    cursor: default;
+}
+
+#player1, #player2, #player3, #player4 {
+    min-height: 123px;
+}
+
+#stack_container .card {
+    cursor: default;
+}
+
+#stack {
+    cursor: pointer;
+}
+
+#information {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 500px;
+    padding: 20px;
+    background-color: orange;
+}
+
+#choice, #rules, #end {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+}
+
+#choice_content, #rules_content, #end_content {
+    position: absolute;
+    top: calc(50% - 250px);
+    left: calc(50% - 250px);
+    background: white;
+    width: 500px;
+    padding: 20px;
+}
+
+#rules_content ul > li{
+    padding-bottom: 20px;
+}
