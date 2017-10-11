@@ -46,7 +46,7 @@
 
             title = '<p class="title">'+player_name+'</p>';
 
-            content_element.innerHTML += title+'<div id="player'+(player+1)+'"></div>';
+            content_element.innerHTML += title+'<div id="player'+(player+1)+'" class="player"></div>';
 
             var el_player = document.getElementById('player'+(player+1));
 

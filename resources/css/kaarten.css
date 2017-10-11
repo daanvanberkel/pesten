@@ -7,11 +7,14 @@ body {
     margin: 0;
 }
 
+.player, #stack_container{
+    display: flex;
+}
+
 .card, .card_back {
 	height: 123px;
 	width: 79px;
 	display: block;
-	float: left;
 	cursor: pointer;
 }
 
@@ -112,20 +115,19 @@ body {
 }
 
 #choice, #rules, #end {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     background: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #choice_content, #rules_content, #end_content {
-    position: absolute;
-    top: calc(50% - 250px);
-    left: calc(50% - 250px);
     background: white;
-    width: 500px;
     padding: 20px;
 }
 
